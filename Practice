@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<HTML LANG="KO">
+
+    <HEAD>
+        <meta charset="UTF-8"
+        <meta NAME="VIEWPORT" 
+              CONTENT="WIDTH=DEVICE-WIDTH, INITIAL=SCALE=1.0">
+        <TITLE> 방송국원 모집 페이지 </TITLE>
+    </HEAD>
+        <BODY>
+            <H1>수습 국원 모집</H1>
+            <h2>방송에 관심 있는 새내기 여러분 환영합니다</h2>
+            <p>교내 방송국에서 신입생을 대상아로 수습 국원을 모집합니다. 학부와 전공은 상관없습니다.</p>
+            <P><BR>방송에 관심 있는 여러 학우의 지원 바랍니다.</P>
+            <UL>
+                <LI><B>모집 기간</B> : 3월 2일 ~ 3월 11일</LI>
+                <LI><B>모집 분야</B> : 아나운서, PD, 엔지니어</LI>
+                <LI><B>지원 방법</B> : 양식 작성 후 이메일 접수</LI>
+            </UL>
+            <p>지원서 양식은 교내 방송국 홈페이지 공지 게시판에 있습니다.</p>
+            <H3>혜택</H3>
+            <OL>
+                <LI>수습기자 활동 중 소정의 활동비 지급</LI>
+                <LI>정기자로 진급하면 장학금 지급</LI>
+            </OL>
+            <IMG SRC = "./ch17_mic.jpg" ALT="카메라 사진">
+        </BODY>
+</HTML>
