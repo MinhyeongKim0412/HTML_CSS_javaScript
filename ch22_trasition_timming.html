@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 시간 변화 율 속성 </title>
+    <style>
+        .container
+        {
+            padding: 10px;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .bar
+        {
+            width: 100px;
+            background-color: red;
+            transition-property: width;
+            transition-duration: 2s;
+            margin-bottom: 10px;
+        }
+        
+        /* container 클래스를 쓰는 요소(태그) 에 마우스가 올라오면
+           bar 클래스를 쓰는 자식 요소 에 일괄 효과 적용*/
+        .container:hover .bar{
+            width: 500px;
+        }
+        
+        /* 길이 가 변하는 시간적 변화 율 의 다양한 속성 */
+        #id1
+        {
+            transition-timing-function: linear;
+        }
+        #id2
+        {
+            transition-timing-function: ease;
+        }
+        #id3
+        {
+            transition-timing-function: ease-in;
+        }
+        #id4
+        {
+            transition-timing-function: ease-out;
+        }
+        #id5
+        {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar" id="id1">linear</div>
+        <div class="bar" id="id2">ease</div>
+        <div class="bar" id="id3">ease-in</div>
+        <div class="bar" id="id4">ease-out</div>
+        <div class="bar" id="id5">ease-in-out</div>
+    </div>
+</body>
+</html>

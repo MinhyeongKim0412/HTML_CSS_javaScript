@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  트랜지션 </title>
+    <style>
+        /* 특정 요소의 속성에 변화 하는 효과를 적용하여 나타낼 수있다. */
+        .red-box
+        {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            /*  transition-property : 변화 를 줄 속성을 지정  */
+            transition-property: background-color, color, width;
+            transition-duration: 1s; /* 변화 완료 시간 */
+            transition-delay: 200ms; /* 변화 시작 딜레이 시간 */
+        }
+        .red-box:hover
+        {
+            background-color : blue;
+            color : white; /* 텍스트 색깔*/
+            width : 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box"> 글씨 색상 변경 </div>
+</body>
+</html>

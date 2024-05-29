@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> float </title>
+    <!-- clear : 인접한 요소의 float 속성의 영향을 받지 않도록 설정-->
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red-box{
+            background-color: red;
+            float:left;  
+        }
+        .green-box{
+            background-color: green;
+            float:left;
+        }
+        .blue-box{
+            background-color: blue; 
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box"></div>
+    <div class="green-box"></div>
+    <div class="blue-box"></div>
+
+</body>
+</html>

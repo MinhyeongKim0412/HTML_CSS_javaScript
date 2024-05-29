@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> float </title>
+    <!-- 블럭 요소 -> 인라인 요소로 변형하여 float
+    비슷한 행의 위치에  여러 요소를 배치 하거나 위치를 이동 시킬수 있도록 속성을 적용 -->
+    <style>
+        div
+        {
+            color:white;
+        }
+
+        .red-box{
+            background-color: red;
+            float:left; 
+            /*  블럭 요소 -> 인라인 요소로 변형 */
+        }
+        .green-box{
+            background-color: green;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box">~~~~~~redbox~~~~~</div>
+    <div class="green-box">~~~~~~greenbox~~~~~</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 행간 높이 </title>
+    <style>
+        /* 텍스트의 줄 간격을 조절 하는데 사용
+        텍스트 블럭에서 줄 사이의 공간 설정후 가독성 및 레이아웃 정돈 */
+        p{
+            /* p 태그의 공통속성 
+              요소간 여백 0  */
+            margin:0px;
+            font-size: 25px;
+        }
+        .nomal{
+            /* nomal : 폰트 의 기본 행간 거리 */
+            line-height: normal;
+        }
+        .number{ 
+            /* font-size 에 비례한 값 2 : 2배의 크기 */
+            line-height: 2;
+        }
+        .percent{ 
+            /* font-size 에 비례한 값 200% : 2배의 크기 */
+            line-height: 200%;
+        }
+        .pix{  
+            line-height: 30px;
+        }
+        .exam{  
+            line-height: 20px; 
+        }
+    </style>
+
+</head>
+<body>
+    <p class="nomal"> 기본 행간 간격 적용</p>
+    <p class="number">  행간 간격 폰트사이즈 2배 적용  </p>
+    <p class="percent"> 행간 간격 폰트 사이즈 200 퍼센트 적용</p>
+    <p class="pix">  행간 간격 30px 적용 </p>
+
+    <p class="exam">  폰트사이즈 : 30px 행간 간격 10px 적용 겹침</p>
+    <p class="exam">  폰트사이즈 : 30px 행간 간격 10px 적용 겹침</p>
+</body>
+</html>

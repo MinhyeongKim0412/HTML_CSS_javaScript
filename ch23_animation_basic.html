@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> animation </title>
+
+    <!-- animation : 키 프레임에 설정 된 내용에 따라 순차적으로 변환 효과를 주는 기능  -->
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation-name: bgchangs; /* 사용할 키 프레임 지정 */  
+            animation-duration: 5s; /* 지속 시간 */
+            animation-delay: 3s; /* 3초 있다가 진행 */
+            animation-fill-mode: both;/*none : 시작 전 / 후 원래대로 돌아간다.
+                                        forwards : 마지막 키프레임 홀드
+                                        backwards : 첫번째 키 프레임 홀드
+                                        both : forwards , backwards 둘다 적용
+                                       */
+           animation-iteration-count: 2; /* 애니메이션 반복 횟수 */
+           animation-direction: normal; /* normal : 기본 , reverse 거꾸로 시작 */                           
+        }
+
+        /* 키 프레임 : 애니매이션 효과를 줄 순차적 내용을 기술 */ 
+        @keyframes bgchangs
+        {
+            0%{background-color: red;} 
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

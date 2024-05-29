@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 콘텐츠
+        태그의 시작과 종료 사이에 사용된 콘텐츠가 속하는 영역
+        width 와 hight 크기는 콘텐츠 영역만 표시 
+        요소의 크기 는 border 와 margin 영역을 합하여 결과가 나온다.
+        */
+
+        #content{ 
+            width: 250px;
+            height: 100px;
+
+            border: 10px solid black;
+            margin: 10px;
+
+            /* 250 * 100 px 의 크기를 자동으로 border 크기로 변환*/
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p> 콘텐츠 영역을 표시합니다. </p>
+    </div>
+</body>
+</html>

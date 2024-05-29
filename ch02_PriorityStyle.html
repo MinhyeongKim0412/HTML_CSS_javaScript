@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 적용 우선 순위와 개별성 </title>
+    <style>
+        /* sub id 이거나 title 클래스 일 경우  
+        #sub 를 만족할때는 : 100 점
+        .title 을 만족할때는 : 10 점*/
+        #sub, .title{color: blue; font-size: 15px;}
+          
+        /* 부모 요소가 name id 이고 자식 요소 가 sub id 일 경우 
+        두개다 만족 할 경우만 체크 100 + 100 = 200 점 
+        */
+        #name #sub{color: red; font-size: 30px;}
+
+        /* important 설정 시 1000 점 */
+        h1{ color: green  !important}
+
+        /* 일반 태그 선택자 1점 */
+        h2{ color: brown;}
+    </style>
+
+
+</head>
+<body>
+    <h1 class="title"> class="title" 이지만 important style 이 우선 적용 </h1>
+    <div id="name">
+        <!-- inlinestyle  이 1000 점이 주어지므로 우선 적용 
+        h2{ color: brown;} 스타일 1점
+        #name #sub{color: red; font-size: 30px;} 스타일 200점
+        .title{color: blue; font-size: 15px;} 10 점
+        inline style="color: chocolate; font-size: 50px;" 1000 점 
+        4가지 스타일이 적용되어 우선 순위가 높은 스타일이 표현된다.
+        -->
+        <h2 id="sub" class="title" style="color: chocolate; font-size: 50px;"> inline style 이 적용 된다. </h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> zindex</title>
+
+    <style> 
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0; 
+        } 
+        
+        .red-box
+        {
+            background-color: red;
+            position: relative; /* a요소의 왼쪽 위 를 기준 */
+            z-index: 1;
+        }
+        .green-box
+        {
+            background-color: green; 
+            position: absolute;
+            left: 50px;
+            top: 40px; 
+            z-index: 10; /* 붉은 요소 보다 설정값이 크므로 앞으로 보내기효과 적용 */
+        } 
+    </style>
+
+</head>
+<body style="margin: 0;">
+    <div class="box red-box"></div>
+    <div class="box green-box"></div> 
+</body>
+</html>

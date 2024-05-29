@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> absolute</title>
+
+    <style> 
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0; 
+        } 
+        
+        .red-box
+        {
+            background-color: red;
+        }
+        .green-box
+        {
+            background-color: green;
+            /*  일정 지점까지 요소 이동 
+                한계점 . 위 아래 왼 오 0px 에 도착 시 그위치 에 고정 */
+            position: sticky;
+            left: 100px;
+            /* 초기 기준값 에서 top 을 0px 의 한계점 으로 설정해야 효과 확인 */ 
+            top : 0px;  
+        }
+        .blue-box
+        {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body style="margin: 0; height: 4000px;">
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

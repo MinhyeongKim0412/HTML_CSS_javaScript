@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> location </title>
+
+    <style>
+        /* 기준점을 왼쪽 위 모서리로 하여 좌표에 따른 요소의 위치 이동  */
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+        } 
+        
+        .red-box
+        {
+            background-color: red;
+        }
+        .green-box
+        {
+            background-color: green;
+            /* 기준점을 왼쪽 위 모서리로 하여 좌표에 따른 요소의 위치 이동  */
+            position: relative; 
+            left: 100px;
+            top: 100px;
+        }
+        .blue-box
+        {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

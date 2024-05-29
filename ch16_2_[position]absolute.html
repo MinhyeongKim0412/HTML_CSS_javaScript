@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> absolute</title>
+
+    <style> 
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            box-sizing: border-box;
+        } 
+        
+        .red-box
+        {
+            background-color: red;
+        }
+        .green-box
+        {
+            background-color: green;
+            /* 해당 요소 를 z 축으로 띄움. 
+               기준점을 웹 브라우저의 왼쪽 위 모서리로 한다. */
+            position: absolute;
+            left: 100px;
+            top : 200px;  
+        }
+        .blue-box
+        {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body style="margin: 0;">
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

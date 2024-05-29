@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> absolute</title>
+
+    <style> 
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 0; 
+        } 
+        
+        .red-box
+        {
+            background-color: red;
+        }
+        .green-box
+        {
+            background-color: green;
+            /* 지정된 위치에 고정. 스크롤 시에도 고정 
+               z 축으로 플로팅
+               기준점 웹 브라우저 왼쪽 위 모서리로 이동 */
+            position: fixed;
+            left: 100px;
+            top : 200px;  
+        }
+        .blue-box
+        {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body style="margin: 0; height: 4000px;">
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

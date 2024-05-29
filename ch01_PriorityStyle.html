@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 적용 우선 순위 와 개별성  </title>
+    <!-- 사용자 정의 스타일이 기본 스타일 보다 우선 적용 된다 --> 
+    <style>
+        h1{ font-size: 10px; }
+        h1{ font-size: 20px; }
+        h1{ font-size: 40px; } /* 마지막에 적용한 스타일이 우선순위를 가진다.*/ 
+
+        /* 중복 되지 않는 속성은 연계 , 중복되는 속성은 마지막 에 선언한 스타일이 적용. */
+        h2{color : red}
+        h2{font-size: 50px;}
+        h2{color: blue;}
+    </style>
+</head>
+<body>
+    <h1>대문 글귀 입니다. 볼드체 와 폰트 크기가 기본 스타일로 적용되어있습니다.</h1>
+    <h2>중복 되지 않는 스타일은 연계 됩니다.</h2>
+</body>
+</html>
